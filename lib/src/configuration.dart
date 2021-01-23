@@ -3,9 +3,9 @@ import './gherkin/parameters/custom_parameter.dart';
 import './gherkin/steps/world.dart';
 import './hooks/hook.dart';
 import './reporters/reporter.dart';
-import 'package:glob/glob.dart';
 
 import 'gherkin/attachments/attachment_manager.dart';
+import 'glob/glob.dart';
 
 typedef CreateWorld = Future<World> Function(TestConfiguration config);
 typedef CreateAttachmentManager = Future<AttachmentManager> Function(
